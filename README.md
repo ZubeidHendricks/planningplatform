@@ -300,7 +300,72 @@ This project uses a **pnpm workspace** monorepo with 5 internal packages:
 
 ## Built With
 
-This platform was built by [Zubeid Hendricks](https://github.com/ZubeidHendricks) using [Claude Code](https://claude.ai/claude-code) (Anthropic's Claude Opus 4.6) as an AI pair-programming partner. Claude Code assisted with architecture design, code generation, and feature implementation across all 6 build phases.
+This platform was built by [Zubeid Hendricks](https://github.com/ZubeidHendricks) using [Claude Code](https://claude.ai/claude-code) (Anthropic's Claude Opus 4.6) as an AI pair-programming partner.
+
+### Core Framework & Runtime
+- [React](https://github.com/facebook/react) — UI framework (v19)
+- [Vite](https://github.com/vitejs/vite) — Build tool & dev server (v6)
+- [Express](https://github.com/expressjs/express) — HTTP server (v5)
+- [TypeScript](https://github.com/microsoft/TypeScript) — Type-safe JavaScript (v5.9)
+- [Node.js](https://github.com/nodejs/node) — Runtime (>=22)
+
+### Database & ORM
+- [Drizzle ORM](https://github.com/drizzle-team/drizzle-orm) — Type-safe ORM & migrations
+- [PostgreSQL](https://www.postgresql.org/) — Relational database (v16)
+- [postgres.js](https://github.com/porsager/postgres) — PostgreSQL driver
+- [CUID2](https://github.com/paralleldrive/cuid2) — Collision-resistant IDs
+
+### State Management
+- [Zustand](https://github.com/pmndrs/zustand) — Global state (v5)
+- [TanStack React Query](https://github.com/TanStack/query) — Server state & caching (v5)
+
+### UI Component Libraries
+- [Radix UI](https://github.com/radix-ui/primitives) — Accessible headless components (dialog, dropdown, select, tabs, tooltip, toast, popover, context menu, switch, avatar, checkbox, label, separator, slot)
+- [Lucide React](https://github.com/lucide-icons/lucide) — SVG icon library (1000+ icons)
+- [class-variance-authority](https://github.com/joe-bell/cva) — Variant-based component styling
+- [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) — Utility-first CSS framework (v4)
+- [tailwind-merge](https://github.com/dcastil/tailwind-merge) — Intelligent class merging
+- [clsx](https://github.com/lukeed/clsx) — Conditional classnames
+
+### Data Visualization
+- [Recharts](https://github.com/recharts/recharts) — Chart library (bar, line, pie, area, waterfall)
+- [react-window](https://github.com/bvaughn/react-window) — Virtualized grid rendering
+- [react-grid-layout](https://github.com/react-grid-layout/react-grid-layout) — Drag-and-drop dashboard layouts
+
+### Code Editor
+- [CodeMirror](https://github.com/codemirror/dev) — Formula editor (v6)
+- [Lezer](https://github.com/lezer-parser/lr) — Parser framework for syntax highlighting
+
+### Routing
+- [React Router](https://github.com/remix-run/react-router) — Client-side routing (v7)
+
+### AI
+- [Anthropic Claude SDK](https://github.com/anthropics/anthropic-sdk-node) — AI model generation, analysis, formula suggestions
+
+### Real-time
+- [Socket.IO](https://github.com/socketio/socket.io) — WebSocket server & client for live collaboration
+
+### Authentication
+- [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) — JWT signing & verification
+- [bcryptjs](https://github.com/dcodeIO/bcrypt.js) — Password hashing (cost 12)
+
+### Validation
+- [Zod](https://github.com/colinhacks/zod) — Schema validation & type inference
+- [drizzle-zod](https://github.com/drizzle-team/drizzle-orm) — Auto-generate Zod schemas from DB tables
+
+### Export & Documents
+- [ExcelJS](https://github.com/exceljs/exceljs) — Excel (.xlsx) generation
+- [PDFKit](https://github.com/foliojs/pdfkit) — PDF generation
+- [pptxgenjs](https://github.com/gitbrent/PptxGenJS) — PowerPoint generation
+
+### Email
+- [Nodemailer](https://github.com/nodemailer/nodemailer) — Email delivery
+
+### Build & Dev Tools
+- [esbuild](https://github.com/evanw/esbuild) — Production API bundling
+- [tsx](https://github.com/privatenumber/tsx) — TypeScript execution (dev mode)
+- [Vitest](https://github.com/vitest-dev/vitest) — Test runner (54 engine tests)
+- [pnpm](https://github.com/pnpm/pnpm) — Package manager with workspaces
 
 ## License
 

@@ -302,6 +302,86 @@ This project uses a **pnpm workspace** monorepo with 5 internal packages:
 
 This platform was built by [Zubeid Hendricks](https://github.com/ZubeidHendricks) using [Claude Code](https://claude.ai/claude-code) (Anthropic's Claude Opus 4.6) as an AI pair-programming partner.
 
+### Other Projects by ZubeidHendricks
+
+This planning platform draws on patterns, infrastructure, and domain expertise from a portfolio of production applications and open-source projects:
+
+#### Production SaaS Applications
+- [ambassadorc-v5](https://github.com/ZubeidHendricks/ambassadorc-v5) — Insurance ambassador management platform (vertical template source)
+- [attendance](https://github.com/ZubeidHendricks/attendance) — Workforce attendance tracking system
+- [carta-lms](https://github.com/ZubeidHendricks/carta-lms) — Learning management system
+- [service-connect](https://github.com/ZubeidHendricks/service-connect) — Lead generation platform for service providers
+- [printparty](https://github.com/ZubeidHendricks/printparty) / [printpartydesign](https://github.com/ZubeidHendricks/printpartydesign) — Print-on-demand e-commerce platform
+
+#### AI & Agent Systems
+- [zubaid-ai-assistant](https://github.com/ZubeidHendricks/zubaid-ai-assistant) — ZUBAID AI Assistant for Adobe Express (multi-agent creative workflows)
+- [ai-dev-orchestrator](https://github.com/ZubeidHendricks/ai-dev-orchestrator) — AI-powered development workflow automation
+- [ai-code-generator](https://github.com/ZubeidHendricks/ai-code-generator) — AI-powered code generation system
+- [crewai-dev-assistant](https://github.com/ZubeidHendricks/crewai-dev-assistant) — Automated dev assistant powered by CrewAI
+- [project-orchestrator](https://github.com/ZubeidHendricks/project-orchestrator) — Automated project management powered by CrewAI
+- [d8tavision-gpt](https://github.com/ZubeidHendricks/d8tavision-gpt) — Data vision GPT application
+- [hedera-bidirectional-agent-chain](https://github.com/ZubeidHendricks/hedera-bidirectional-agent-chain) — Dynamic bidirectional agent chain orchestrator
+- [vincent-hackathon-trading-bot](https://github.com/ZubeidHendricks/vincent-hackathon-trading-bot) — Multi-agent trading system with user-controlled permissions
+
+#### MCP (Model Context Protocol) Servers
+- [youtube-mcp-server](https://github.com/ZubeidHendricks/youtube-mcp-server) — MCP Server for YouTube API (video management, Shorts, analytics)
+- [azure-devops-mcp-server](https://github.com/ZubeidHendricks/azure-devops-mcp-server) — MCP Server for Azure DevOps integration
+- [azure-onenote-mcp-server](https://github.com/ZubeidHendricks/azure-onenote-mcp-server) — MCP Server for Azure OneNote
+- [claude-desktop-mcp](https://github.com/ZubeidHendricks/claude-desktop-mcp) — MCP Server for Claude Desktop
+- [roblox-studio-mcp-claude-code](https://github.com/ZubeidHendricks/roblox-studio-mcp-claude-code) — MCP for Roblox Studio with Claude Code
+- [mcpserver](https://github.com/ZubeidHendricks/mcpserver) — Model Context Protocol servers collection
+- [huly-mcp](https://github.com/ZubeidHendricks/huly-mcp) — MCP implementation for Huly
+- [LInkedIn-MCP](https://github.com/ZubeidHendricks/LInkedIn-MCP) — LinkedIn MCP server
+
+#### Monday.com Solutions
+- [monday-industry-solutions](https://github.com/ZubeidHendricks/monday-industry-solutions) — Industry-specific solutions (healthcare, construction, legal, education, manufacturing)
+- [monday-data-management-reporting](https://github.com/ZubeidHendricks/monday-data-management-reporting) — Advanced analytics and dashboard creation
+- [monday-communication-collaboration](https://github.com/ZubeidHendricks/monday-communication-collaboration) — Multi-channel integration and voice AI
+- [monday-advanced-financial-management](https://github.com/ZubeidHendricks/monday-advanced-financial-management) — AI-powered forecasting and budget analysis
+- [monday-sdk](https://github.com/ZubeidHendricks/monday-sdk) — Monday.com SDK
+
+#### Blockchain & Web3
+- [AfriChain](https://github.com/ZubeidHendricks/AfriChain) — Blockchain authenticity & payment platform for African artisans (NFT-based)
+- [verichainX](https://github.com/ZubeidHendricks/verichainX) — Counterfeit detection and brand protection
+- [verichainX-hedera](https://github.com/ZubeidHendricks/verichainX-hedera) — Brand protection on Hedera
+- [verichainX-SEI](https://github.com/ZubeidHendricks/verichainX-SEI) — Brand protection on SEI
+- [zoobayd-platform](https://github.com/ZubeidHendricks/zoobayd-platform) — Web3 AI development platform
+- [sme-collaboration-platform](https://github.com/ZubeidHendricks/sme-collaboration-platform) — Blockchain-based SME collaboration
+- [sme-ledger-platform](https://github.com/ZubeidHendricks/sme-ledger-platform) — Distributed ledger for SME projects
+
+#### Education & Language
+- [LinguaLink](https://github.com/ZubeidHendricks/LinguaLink) — Multi-language word game
+- [lingualearn-platform](https://github.com/ZubeidHendricks/lingualearn-platform) — Multilingual adaptive learning (Llama 3.1 + MuAViC)
+- [lingualearn-system](https://github.com/ZubeidHendricks/lingualearn-system) — Real-time translation for SA classrooms
+- [lingualearn-system-v2](https://github.com/ZubeidHendricks/lingualearn-system-v2) — AI-powered indigenous language preservation
+- [TaalimX](https://github.com/ZubeidHendricks/TaalimX) — Educational platform
+- [saas-lms-blazor](https://github.com/ZubeidHendricks/saas-lms-blazor) — Multi-tenant LMS with Blazor
+
+#### POS Systems
+- [islamic-pos-system](https://github.com/ZubeidHendricks/islamic-pos-system) — Blazor POS with Islamic finance features
+- [blazor-pos-system](https://github.com/ZubeidHendricks/blazor-pos-system) — Modern POS with real-time inventory
+- [ultimate-pos-system](https://github.com/ZubeidHendricks/ultimate-pos-system) — Full-featured POS (Laravel)
+- [modern-pos-system](https://github.com/ZubeidHendricks/modern-pos-system) — Minimalist POS with multi-payment
+
+#### Collaborative Shopping
+- [shop-together-real](https://github.com/ZubeidHendricks/shop-together-real) — Real-time collaborative shopping with voice chat
+- [collab-shop-core](https://github.com/ZubeidHendricks/collab-shop-core) — Core service for universal collaborative shopping
+- [yobuddy](https://github.com/ZubeidHendricks/yobuddy) — Chrome extension for synchronized browsing & shopping
+
+#### Crypto Trading
+- [crypto-arb-engine](https://github.com/ZubeidHendricks/crypto-arb-engine) — Multi-exchange cryptocurrency arbitrage
+- [crypto-arbitrage-platform](https://github.com/ZubeidHendricks/crypto-arbitrage-platform) — Automated crypto arbitrage trading
+
+#### Other
+- [kontext-detective](https://github.com/ZubeidHendricks/kontext-detective) — AI-generated content detection (FLUX.1 Kontext, Black Forest Labs Hackathon)
+- [gamerclip](https://github.com/ZubeidHendricks/gamerclip) — Gaming clip platform
+- [ViralClone](https://github.com/ZubeidHendricks/ViralClone) — Viral content platform
+- [heyZub-Live](https://github.com/ZubeidHendricks/heyZub-Live) — Web platform for AI model interactions
+- [pricklypairstudios](https://github.com/ZubeidHendricks/pricklypairstudios) — Prickly Pair Studios main repo
+- [UbuntuCore-AGI](https://github.com/ZubeidHendricks/UbuntuCore-AGI) — Decentralized, ethical, open-source general intelligence
+- [ClimateActionOrchestrator](https://github.com/ZubeidHendricks/ClimateActionOrchestrator) — Climate action coordination platform
+- [activepieces](https://github.com/ZubeidHendricks/activepieces) — AI Agents & MCPs & workflow automation (280+ MCP servers)
+
 ### Core Framework & Runtime
 - [React](https://github.com/facebook/react) — UI framework (v19)
 - [Vite](https://github.com/vitejs/vite) — Build tool & dev server (v6)

@@ -1,0 +1,32 @@
+{
+  "name": "planning-platform",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Enterprise business planning platform with multidimensional formula engine",
+  "author": "Prickly Pair Studios <pricklypairstudiosza@gmail.com>",
+  "license": "PROPRIETARY",
+  "packageManager": "pnpm@10.6.5",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev:api": "pnpm --filter @planning-platform/api dev",
+    "dev:web": "pnpm --filter @planning-platform/web dev",
+    "dev": "pnpm run --parallel dev:api dev:web",
+    "build": "pnpm run --filter @planning-platform/engine build && pnpm run --filter @planning-platform/db build && pnpm run --filter @planning-platform/shared build && pnpm run --filter @planning-platform/api build && pnpm run --filter @planning-platform/web build",
+    "build:engine": "pnpm --filter @planning-platform/engine build",
+    "build:api": "pnpm --filter @planning-platform/api build",
+    "build:web": "pnpm --filter @planning-platform/web build",
+    "test": "pnpm run --recursive test",
+    "test:engine": "pnpm --filter @planning-platform/engine test",
+    "lint": "pnpm run --recursive lint",
+    "db:generate": "pnpm --filter @planning-platform/db generate",
+    "db:migrate": "pnpm --filter @planning-platform/db migrate",
+    "db:push": "pnpm --filter @planning-platform/db push",
+    "codegen": "pnpm --filter @planning-platform/api-client-react generate"
+  },
+  "dependencies": {
+    "socket.io": "^4.8.3",
+    "socket.io-client": "^4.8.3"
+  }
+}

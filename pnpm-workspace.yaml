@@ -1,0 +1,6 @@
+packages:
+  - artifacts/*
+  - lib/*
+ignoredBuiltDependencies:
+  - bcrypt
+  - esbuild

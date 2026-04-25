@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #f3f3f3;
+  --color-foreground: #1a1a1a;
+  --color-card: rgba(255, 255, 255, 0.7);
+  --color-card-foreground: #1a1a1a;
+  --color-popover: rgba(255, 255, 255, 0.85);
+  --color-popover-foreground: #1a1a1a;
+  --color-primary: #0078d4;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: rgba(0, 0, 0, 0.04);
+  --color-secondary-foreground: #1a1a1a;
+  --color-muted: rgba(0, 0, 0, 0.04);
+  --color-muted-foreground: #616161;
+  --color-accent: rgba(0, 120, 212, 0.08);
+  --color-accent-foreground: #0078d4;
+  --color-destructive: #c42b1c;
+  --color-destructive-foreground: #ffffff;
+  --color-border: rgba(0, 0, 0, 0.06);
+  --color-input: rgba(0, 0, 0, 0.06);
+  --color-ring: #0078d4;
+  --color-success: #0f7b0f;
+  --color-warning: #9d5d00;
+  --radius: 1.5rem;
+}
+
+.dark {
+  --color-background: #202020;
+  --color-foreground: #f5f5f5;
+  --color-card: rgba(44, 44, 44, 0.7);
+  --color-card-foreground: #f5f5f5;
+  --color-popover: rgba(44, 44, 44, 0.85);
+  --color-popover-foreground: #f5f5f5;
+  --color-primary: #60cdff;
+  --color-primary-foreground: #003a6e;
+  --color-secondary: rgba(255, 255, 255, 0.06);
+  --color-secondary-foreground: #f5f5f5;
+  --color-muted: rgba(255, 255, 255, 0.06);
+  --color-muted-foreground: #9a9a9a;
+  --color-accent: rgba(96, 205, 255, 0.1);
+  --color-accent-foreground: #60cdff;
+  --color-destructive: #ff99a4;
+  --color-destructive-foreground: #3b0509;
+  --color-border: rgba(255, 255, 255, 0.07);
+  --color-input: rgba(255, 255, 255, 0.07);
+  --color-ring: #60cdff;
+  --color-success: #6ccb5f;
+  --color-warning: #fce100;
+}
+
+body {
+  font-family: 'Segoe UI Variable', 'Segoe UI', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Win11 Mica material */
+.mica {
+  background-color: rgba(243, 243, 243, 0.72);
+  backdrop-filter: blur(60px) saturate(125%);
+}
+.dark .mica {
+  background-color: rgba(32, 32, 32, 0.72);
+}
+
+/* Win11 Acrylic material */
+.acrylic {
+  background-color: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(30px) saturate(125%);
+}
+.dark .acrylic {
+  background-color: rgba(44, 44, 44, 0.65);
+}
+
+/* Win11 soft shadow */
+.shadow-win {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04), 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+.dark .shadow-win {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Win11 elevated shadow (for dialogs, dropdowns) */
+.shadow-win-lg {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06), 0 16px 64px rgba(0, 0, 0, 0.12);
+}
+.dark .shadow-win-lg {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 16px 64px rgba(0, 0, 0, 0.4);
+}
+
+/* Block type accent colors */
+.block-metric { --block-accent: #7c3aed; }
+.block-dimension_list { --block-accent: #2563eb; }
+.block-transaction_list { --block-accent: #16a34a; }
+.block-table { --block-accent: #dc2626; }
+
+/* react-grid-layout overrides */
+.react-grid-item.react-grid-placeholder {
+  background: var(--color-primary) !important;
+  opacity: 0.1 !important;
+  border-radius: 1.5rem !important;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.22);
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+/* Animation utilities */
+@keyframes slide-in-right {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+@keyframes slide-out-right {
+  from { transform: translateX(0); }
+  to { transform: translateX(100%); }
+}
+.animate-slide-in-right {
+  animation: slide-in-right 0.2s ease-out;
+}
+.animate-slide-out-right {
+  animation: slide-out-right 0.2s ease-in;
+}
+
+/* Hide scrollbar for horizontal scroll containers on mobile */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}

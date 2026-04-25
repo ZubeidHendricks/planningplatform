@@ -1,0 +1,56 @@
+import {
+  DollarSign, Users, TrendingUp, BarChart3, ShoppingCart, Building2, Truck,
+  Shield, Rocket, Briefcase, Target, GraduationCap, ClipboardCheck, HeartPulse,
+  Video, FileText, ShieldCheck, Brain, Handshake, Fuel, CircleDot, Package,
+  Wrench, Wallet, AlertTriangle, MapPin, Scale, CalendarDays, ShieldAlert,
+  Heart, Banknote, Award, CreditCard, MessageSquare, GitBranch, Boxes,
+  LayoutDashboard, Activity, Layers, Hash, type LucideIcon,
+} from 'lucide-react';
+
+const ICON_MAP: Record<string, LucideIcon> = {
+  'dollar-sign': DollarSign,
+  'users': Users,
+  'trending-up': TrendingUp,
+  'bar-chart-3': BarChart3,
+  'shopping-cart': ShoppingCart,
+  'building-2': Building2,
+  'truck': Truck,
+  'shield': Shield,
+  'rocket': Rocket,
+  'briefcase': Briefcase,
+  'target': Target,
+  'graduation-cap': GraduationCap,
+  'clipboard-check': ClipboardCheck,
+  'heart-pulse': HeartPulse,
+  'video': Video,
+  'file-text': FileText,
+  'shield-check': ShieldCheck,
+  'brain': Brain,
+  'handshake': Handshake,
+  'fuel': Fuel,
+  'circle-dot': CircleDot,
+  'package': Package,
+  'wrench': Wrench,
+  'wallet': Wallet,
+  'alert-triangle': AlertTriangle,
+  'map-pin': MapPin,
+  'scale': Scale,
+  'calendar-days': CalendarDays,
+  'shield-alert': ShieldAlert,
+  'heart': Heart,
+  'banknote': Banknote,
+  'award': Award,
+  'credit-card': CreditCard,
+  'message-square': MessageSquare,
+  'git-branch': GitBranch,
+  'boxes': Boxes,
+  'layout-dashboard': LayoutDashboard,
+  'activity': Activity,
+  'layers': Layers,
+  'hash': Hash,
+};
+
+export function getAppIcon(iconName: string | null | undefined): LucideIcon | null {
+  if (!iconName) return null;
+  return ICON_MAP[iconName] ?? null;
+}

@@ -298,6 +298,10 @@ This project uses a **pnpm workspace** monorepo with 5 internal packages:
 - **Focus**: African market first, then global SMBs
 - **Differentiator**: AI-native, vertical templates, 10x lower price
 
+## Built With
+
+This platform was built by [Zubeid Hendricks](https://github.com/ZubeidHendricks) using [Claude Code](https://claude.ai/claude-code) (Anthropic's Claude Opus 4.6) as an AI pair-programming partner. Claude Code assisted with architecture design, code generation, and feature implementation across all 6 build phases.
+
 ## License
 
 Proprietary — Prickly Pair Studios (Pty) Ltd

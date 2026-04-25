@@ -153,19 +153,111 @@ Workspace: pps
 
 | Layer | Technology |
 |-------|-----------|
-| **Runtime** | Node.js, TypeScript 5.9 |
+| **Runtime** | Node.js >=22, TypeScript 5.9 |
 | **API** | Express 5, Drizzle ORM, PostgreSQL 16 |
-| **Frontend** | React 19, Vite, Tailwind CSS v4, Radix UI |
-| **State** | Zustand, React Query (TanStack Query) |
-| **AI** | Anthropic Claude (model generation, analysis, formula suggestions) |
-| **Real-time** | Socket.IO (presence, live cells, notifications) |
+| **Frontend** | React 19, Vite 6, Tailwind CSS v4, Radix UI |
+| **State** | Zustand 5, TanStack React Query 5 |
+| **AI** | Anthropic Claude SDK (model generation, analysis, formula suggestions) |
+| **Real-time** | Socket.IO 4.8 (presence, live cells, notifications) |
 | **Formula Engine** | Custom DSL (lexer → parser → evaluator → DAG) |
-| **Charts** | Recharts |
-| **Grid** | react-window (virtualized) |
-| **Auth** | JWT + bcrypt (cost 12), RBAC |
-| **Exports** | ExcelJS, PDFKit, pptxgenjs |
-| **Testing** | Vitest (54 engine tests) |
+| **Charts** | Recharts 3.8 |
+| **Grid** | react-window 1.8 (virtualized) |
+| **Auth** | jsonwebtoken + bcryptjs (cost 12), RBAC |
+| **Exports** | ExcelJS 4.4, PDFKit 0.18, pptxgenjs 4.0 |
+| **Email** | Nodemailer 8.0 |
+| **Testing** | Vitest 3.2 (54 engine tests) |
 | **Styling** | Windows 11 Fluent Design, dark mode, responsive |
+| **Package Manager** | pnpm 10.6 with workspaces |
+
+## Monorepo Packages
+
+This project uses a **pnpm workspace** monorepo with 5 internal packages:
+
+### `@planning-platform/web` — React Frontend
+| Category | Package | Version | Purpose |
+|----------|---------|---------|---------|
+| **Framework** | `react` | 19.0 | UI framework |
+| | `react-dom` | 19.0 | DOM rendering |
+| | `react-router` | 7.1 | Client-side routing |
+| **Build** | `vite` | 6.0 | Dev server & bundler |
+| | `@vitejs/plugin-react` | 4.3 | React Fast Refresh |
+| | `tailwindcss` | 4.0 | Utility-first CSS |
+| | `@tailwindcss/vite` | 4.0 | Tailwind Vite plugin |
+| | `typescript` | 5.9-beta | Type checking |
+| **State** | `zustand` | 5.0 | Global state (auth, theme, toast, undo) |
+| | `@tanstack/react-query` | 5.62 | Server state & caching |
+| **UI Components** | `@radix-ui/react-dialog` | 1.1 | Accessible modals |
+| | `@radix-ui/react-dropdown-menu` | 2.1 | Dropdown menus |
+| | `@radix-ui/react-select` | 2.1 | Select inputs |
+| | `@radix-ui/react-tabs` | 1.1 | Tab navigation |
+| | `@radix-ui/react-tooltip` | 1.1 | Tooltips |
+| | `@radix-ui/react-toast` | 1.2 | Toast notifications |
+| | `@radix-ui/react-popover` | 1.1 | Popovers |
+| | `@radix-ui/react-context-menu` | 2.2 | Right-click menus |
+| | `@radix-ui/react-switch` | 1.1 | Toggle switches |
+| | `@radix-ui/react-avatar` | 1.1 | User avatars |
+| | `@radix-ui/react-checkbox` | 1.3 | Checkboxes |
+| | `@radix-ui/react-label` | 2.1 | Form labels |
+| | `@radix-ui/react-separator` | 1.1 | Visual separators |
+| | `@radix-ui/react-slot` | 1.1 | Component composition |
+| **Styling** | `class-variance-authority` | 0.7 | Variant-based component styling |
+| | `clsx` | 2.1 | Conditional classnames |
+| | `tailwind-merge` | 2.6 | Merge Tailwind classes |
+| **Icons** | `lucide-react` | 0.460 | 1000+ SVG icons |
+| **Data Viz** | `recharts` | 3.8 | Charts (bar, line, pie, area, waterfall) |
+| | `react-window` | 1.8 | Virtualized grid rendering |
+| | `react-grid-layout` | 1.5 | Board widget layout |
+| **Code Editor** | `codemirror` | 6.0 | Formula editor base |
+| | `@codemirror/autocomplete` | 6.18 | Formula autocomplete |
+| | `@codemirror/lang-javascript` | 6.2 | Syntax highlighting |
+| | `@codemirror/language` | 6.10 | Language support |
+| | `@codemirror/state` | 6.5 | Editor state |
+| | `@codemirror/view` | 6.35 | Editor view |
+| | `@lezer/highlight` | 1.2 | Syntax highlighting |
+| | `@lezer/lr` | 1.4 | Parser framework |
+| **Real-time** | `socket.io-client` | 4.8 | WebSocket client |
+
+### `@planning-platform/api` — Express Backend
+| Category | Package | Version | Purpose |
+|----------|---------|---------|---------|
+| **Framework** | `express` | 5.1 | HTTP server |
+| | `cors` | 2.8 | Cross-origin requests |
+| **Database** | `drizzle-orm` | 0.44 | Type-safe ORM |
+| **AI** | `@anthropic-ai/sdk` | 0.90 | Claude AI integration |
+| **Auth** | `jsonwebtoken` | 9.0 | JWT token signing/verification |
+| | `bcryptjs` | 3.0 | Password hashing (cost 12) |
+| **Validation** | `zod` | 3.25 | Schema validation |
+| **Exports** | `exceljs` | 4.4 | Excel (.xlsx) generation |
+| | `pdfkit` | 0.18 | PDF generation |
+| | `pptxgenjs` | 4.0 | PowerPoint generation |
+| **Email** | `nodemailer` | 8.0 | Email notifications |
+| **Real-time** | `socket.io` | 4.8 | WebSocket server |
+| **Build** | `esbuild` | 0.25 | Production bundling |
+| | `tsx` | 4.19 | Dev server (watch mode) |
+| | `vitest` | 3.2 | Test runner |
+
+### `@planning-platform/engine` — Formula DSL
+| Category | Package | Version | Purpose |
+|----------|---------|---------|---------|
+| **Build** | `typescript` | 5.9-beta | Compiler |
+| **Testing** | `vitest` | 3.2 | 54 tests (lexer, parser, evaluator, DAG) |
+| *Zero runtime dependencies* | | | Pure TypeScript engine |
+
+### `@planning-platform/db` — Database Schema
+| Category | Package | Version | Purpose |
+|----------|---------|---------|---------|
+| **ORM** | `drizzle-orm` | 0.44 | Schema definitions & queries |
+| | `drizzle-zod` | 0.7 | Auto-generate Zod schemas from tables |
+| | `drizzle-kit` | 0.31 | Migrations & schema push |
+| **Driver** | `postgres` | 3.4 | PostgreSQL client (postgres.js) |
+| **Validation** | `zod` | 3.25 | Schema validation |
+| **IDs** | `@paralleldrive/cuid2` | 2.2 | Collision-resistant unique IDs |
+
+### `@planning-platform/shared` — Shared Types
+| Category | Package | Version | Purpose |
+|----------|---------|---------|---------|
+| **Validation** | `zod` | 3.25 | API input/output schemas |
+| *Consumed by API + Web* | | | Single source of truth for types |
 
 ## Architecture
 
